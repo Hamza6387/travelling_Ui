@@ -24,11 +24,11 @@
         }
 
         nav a {
-            font-size: 18px;
+            font-size: 14pt;
             word-spacing: 18px;
             text-decoration: none;
             display: inline-block;
-            
+
 
             color: rgb(246, 241, 241);
             border: 3px;
@@ -40,10 +40,10 @@
         }
 
         nav a:hover {
-            color:greenyellow;
+            color: greenyellow;
         }
 
-         .nav-box{
+        .nav-box {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -54,7 +54,8 @@
             background-color: orange;
             width: 800px;
 
-         }
+        }
+
         img {
             display: block;
             margin: auto auto;
@@ -63,16 +64,25 @@
             margin-top: 23px;
 
         }
+        .btn{
+            width: 100px;
+            height: 30px;
+            margin: 2px auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            
+        }
+        .btn:hover {
 
-       .btn{
-      
-        display:block;
-    
+            color: orange;
 
-       }
-       .clear{
-        clear: both;
-       }
+
+        }
+
+        .clear {
+            clear: both;
+        }
+
         hr {
             background-color: black;
             border: 4px black solid;
@@ -81,6 +91,7 @@
 
         form {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-content: center;
             width: 700px;
@@ -91,30 +102,45 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        form label{
+
+        form label {
             margin: 0px 6px
         }
 
-        form textarea{
-            align-self: center;
-            display: inline-block;
+        form textarea {
+            align-self:self-start;
+            display: flex;
             margin: 0px 18px;
             justify-content: center;
             align-items: center;
 
+            margin: 18px 3px;
+            width: 81%;
+            padding: 8px 2px;
+            border-radius: 6px;
+            border: 1px solid gray;
 
-            
         }
 
-       h3{
-        font-size: 18pt;
-       }
-       p{
-        font-size: 11pt;
-       }
-       label{
-        padding: 7px 5px;
-       }
+        .form-field{
+            width: 80%;
+            margin: 4px 4px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid gray;
+        }
+
+        h3 {
+            font-size: 18pt;
+        }
+
+        p {
+            font-size: 11pt;
+        }
+
+        label {
+            padding: 7px 5px;
+        }
     </style>
 </head>
 
@@ -161,14 +187,14 @@
     <div class="form-row">
         <form action="">
             <label for="name">name</label>
-            <input type="text" id="name" placeholder="enter your name">
+            <input type="text" id="name" placeholder="enter your name" class="form-field">
 
             <label for="email">email</label>
-            <input type="email" id="email" placeholder="Enter your email">
+            <input type="email" id="email" placeholder="Enter your email" class="form-field">
 
             <textarea placeholder="Enter your message"></textarea>
             <br>
-         <input type="button" value="submit" class="btn">
+            <input type="button" value="submit" class="btn">
         </form>
     </div>
 </body>
