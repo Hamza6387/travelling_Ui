@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the world</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(50, 206, 154);
+            font-family: "Ubuntu Sans", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 18px;
+            word-spacing: 18px;
+            text-decoration: none;
+            display: inline-block;
+            
+
+            color: rgb(246, 241, 241);
+            border: 3px;
+            border-radius: 4px;
+            margin: 21px 25px;
+            padding: 12px 2px;
+
+
+        }
+
+        nav a:hover {
+            color:greenyellow;
+        }
+
+         .nav-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px black solid;
+            border-radius: 18px;
+            margin: 2px auto;
+            padding: 2px 2px;
+            background-color: orange;
+            width: 800px;
+
+         }
+        img {
+            display: block;
+            margin: auto auto;
+            height: 700px;
+            width: 600px;
+            margin-top: 23px;
+
+        }
+
+       .btn{
+      
+        display:block;
+    
+
+       }
+       .clear{
+        clear: both;
+       }
+        hr {
+            background-color: black;
+            border: 4px black solid;
+            border-radius: 4px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 700px;
+            margin: 20px auto;
+            margin-bottom: 12px;
+            padding: 20px;
+            background-color: rgb(227, 192, 123);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form label{
+            margin: 0px 6px
+        }
+
+        form textarea{
+            align-self: center;
+            display: inline-block;
+            margin: 0px 18px;
+            justify-content: center;
+            align-items: center;
+
+
+            
+        }
+
+       h3{
+        font-size: 18pt;
+       }
+       p{
+        font-size: 11pt;
+       }
+       label{
+        padding: 7px 5px;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Explore the world</h1>
+        <nav class="nav-box">
+            <a href="#"> Home </a>
+            <a href="#"> Destination </a>
+            <a href="#"> Contact </a>
+        </nav>
+    </header>
+    <div class="b">
+        <img src="https://images.unsplash.com/photo-1745319721339-2f521b4c2470?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D"
+            alt="not found">
+        <h2>“Your Journey Begins Here!”</h2>
+    </div>
+    <hr>
+    <div class="b">
+        <h3>"Paris"</h3>
+        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8fDA%3D"
+            alt="not found">
+        <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and
+            culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. </p>
+    </div>
+    <hr>
+    <div class="b">
+        <h3>"Bali"</h3>
+        <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="not found">
+        <p>Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of
+            Lombok, the province includes the island of Bali and a few smaller</p>
+    </div>
+    <hr>
+    <div class="b">
+        <h3>"Riyadh"</h3>
+        <img src="https://images.unsplash.com/photo-1663900108404-a05e8bf82cda?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cml5YWRofGVufDB8fDB8fHww"
+            alt="not found">
+        <p>Riyadh, Saudi Arabia capital and main financial hub, is on a desert plateau in the country’s center. Business
+            district landmarks include the 302m-high Kingdom Centre, with a sky bridge connecting 2 towers, and
+            267m-high Al</p>
+    </div>
+
+    <div class="form-row">
+        <form action="">
+            <label for="name">name</label>
+            <input type="text" id="name" placeholder="enter your name">
+
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <textarea placeholder="Enter your message"></textarea>
+            <br>
+         <input type="button" value="submit" class="btn">
+        </form>
+    </div>
+</body>
+
+</html>
